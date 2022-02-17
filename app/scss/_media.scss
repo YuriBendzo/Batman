@@ -1,0 +1,101 @@
+@media (max-width: 1024px) {
+    .mute {
+        right: 20px;
+    }
+    .main--index {
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        &__burger {
+            display: block;
+            width: 20px;
+            height: 12px;
+            background-color: transparent;
+            background-image: url(../images/menu-img.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: none;
+        }
+        &__hashtag {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 240px;
+        transform: translateX(-240px);
+        transition: transform .3s ease-in-out;
+        background-color: #260707;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 90px;
+        text-align: center;
+        align-items: stretch;
+        &__list {
+            flex-direction: column;
+            margin-right: 0;
+            gap: 6px;
+            margin-bottom: 6px;
+        }
+        &__link {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        &__cross {
+            position: absolute;
+            display: block;
+            top: 20px;
+            left: 20px;
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/close.svg);
+            border: none;
+            background-color: transparent;
+        }
+        &--active {
+            transform: translateX(0);
+        }
+    }
+    .social {
+        justify-content: center;
+    }
+    .main--index {
+        padding-left: 30px;
+    }
+    .logo {
+        width: 230px;
+    }
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .main--index {
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 64px;
+        padding-left: 0;
+        background-image: linear-gradient(0.11deg, rgba(0, 0, 0, 0.76) 32.14%, rgba(255, 0, 0, 0) 72.56%), url(../images/index-bg-m.jpg);
+    }
+    .logo {
+        width: 125px;
+    }
+    .footer {
+        font-size: 6px;
+        line-height: 7px;
+    }
+}
