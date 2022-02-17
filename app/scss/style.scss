@@ -53,14 +53,11 @@
         width: 24px;
         height: 24px;
     }
-    &__link--fb {
-        background-image: url(../images/facebook.svg);
+    &__link path{
+        transition: all .3s;
     }
-    &__link--tw {
-        background-image: url(../images/twitter.svg);
-    }
-    &__link--inst {
-        background-image: url(../images/instagram.svg);
+    &__link:hover path {
+        fill: #E90000;
     }
 }
 
