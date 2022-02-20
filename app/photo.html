@@ -30,7 +30,7 @@
                     </a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link navigation__link--active" href="photo.html">
+                    <a class="navigation__link navigation__link--active">
                         Фото
                     </a>
                 </li>
@@ -53,8 +53,36 @@
             <label class="mute__label" for="mute">mute</label>
         </div>
     </header>
-    <main class="main main--index">
-        <img class="logo" src="images/logoBatman.png" alt="Логотип к фильму Бэтмен" width="329" height="235">
+    <main class="main main--slider">
+        <div class="main__slider swiper">
+            <ul class="main__slider__list swiper-wrapper">
+                <li class="main__slider__item swiper-slide">
+                    <img class="main__slider__img" src="photo/photo01.jpg" alt="фото">
+                </li>
+                <li class="main__slider__item swiper-slide">
+                    <img class="main__slider__img" src="photo/photo02.jpg" alt="фото">
+                </li>
+                <li class="main__slider__item swiper-slide">
+                    <img class="main__slider__img" src="photo/photo03.jpg" alt="фото">
+                </li>
+            </ul>
+        </div>
+        <div class="pagination">
+            <button class="pagination__arrow"></button>
+            <div class="slider-thumbs swiper">
+                <ul class="slider-thumbs__list swiper-wrapper">
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img class="slider-thumbs__img" src="photo/photo01-thumbs.jpg" alt="превью фото" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img class="slider-thumbs__img" src="photo/photo02-thumbs.jpg" alt="превью фото" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img class="slider-thumbs__img" src="photo/photo03-thumbs.jpg" alt="превью фото" width="260" height="100">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <ul class="footer__links">

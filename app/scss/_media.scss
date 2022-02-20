@@ -94,7 +94,14 @@
     .logo {
         width: 125px;
     }
+    .pagination {
+        min-height: 80px;
+        &__arrow {
+            margin-bottom: 10px;
+        }
+    }
     .footer {
+        height: 50px;
         font-size: 6px;
         line-height: 7px;
     }
